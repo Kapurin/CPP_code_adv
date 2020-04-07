@@ -1,0 +1,12 @@
+﻿  AHW02_main.cpp
+Z:\D\ITEA\PO\AL02_20200331\AHW02_Class_template\Array.hpp(107,16): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+Z:\D\ITEA\PO\AL02_20200331\AHW02_Class_template\Array.hpp(107,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+Z:\D\ITEA\PO\AL02_20200331\AHW02_Class_template\Array.hpp(106): message : while compiling class template member function 'void Array<double>::Set(void)'
+Z:\D\ITEA\PO\AL02_20200331\AHW02_Class_template\Array.hpp(52): message : see reference to function template instantiation 'void Array<double>::Set(void)' being compiled
+Z:\D\ITEA\PO\AL02_20200331\AHW02_Class_template\Array.hpp(49): message : while compiling class template member function 'Array<double>::Array(int)'
+Z:\D\ITEA\PO\AL02_20200331\AHW02_Class_template\AHW02_main.cpp(32): message : see reference to function template instantiation 'Array<double>::Array(int)' being compiled
+Z:\D\ITEA\PO\AL02_20200331\AHW02_Class_template\AHW02_main.cpp(32): message : see reference to class template instantiation 'Array<double>' being compiled
+  Array.hpp
+Z:\D\ITEA\PO\AL02_20200331\AHW02_Class_template\Array.hpp(107,16): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Generating Code...
+  AHW02_Class_template.vcxproj -> Z:\D\ITEA\PO\AL02_20200331\x64\Debug\AHW02_Class_template.exe
