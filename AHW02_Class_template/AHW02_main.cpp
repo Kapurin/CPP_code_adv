@@ -58,5 +58,5 @@ int main()
         cout << "\nИскомый элемент не найден! Ошибка " << FindIndex << endl;
 
     system("pause");
-    return 0;
+    return 0; 
 }

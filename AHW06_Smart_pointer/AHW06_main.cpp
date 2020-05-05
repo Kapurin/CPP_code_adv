@@ -25,8 +25,6 @@ int main()
     cout << "Массив: " << endl;
     (*SPtr1).Print();
 
-    //(*SPtr1)[0]; - работает
-    //SPtr1->[0]; - не работает. Почему? 
 
 
     system("pause");

@@ -1,9 +1,9 @@
 ﻿  AHW06_main.cpp
-Z:\D\ITEA\PO\AL06_20200416\AHW06_Smart_pointer\Array.hpp(107,16): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-Z:\D\ITEA\PO\AL06_20200416\AHW06_Smart_pointer\Array.hpp(107,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-Z:\D\ITEA\PO\AL06_20200416\AHW06_Smart_pointer\Array.hpp(106): message : while compiling class template member function 'void Array<int>::Set(void)'
-Z:\D\ITEA\PO\AL06_20200416\AHW06_Smart_pointer\Array.hpp(52): message : see reference to function template instantiation 'void Array<int>::Set(void)' being compiled
-Z:\D\ITEA\PO\AL06_20200416\AHW06_Smart_pointer\Array.hpp(49): message : while compiling class template member function 'Array<int>::Array(int)'
+Z:\D\ITEA\PO\AL06_20200416\AHW06_Smart_pointer\Array.hpp(108,16): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+Z:\D\ITEA\PO\AL06_20200416\AHW06_Smart_pointer\Array.hpp(108,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+Z:\D\ITEA\PO\AL06_20200416\AHW06_Smart_pointer\Array.hpp(107): message : while compiling class template member function 'void Array<int>::Set(void)'
+Z:\D\ITEA\PO\AL06_20200416\AHW06_Smart_pointer\Array.hpp(53): message : see reference to function template instantiation 'void Array<int>::Set(void)' being compiled
+Z:\D\ITEA\PO\AL06_20200416\AHW06_Smart_pointer\Array.hpp(50): message : while compiling class template member function 'Array<int>::Array(int)'
 Z:\D\ITEA\PO\AL06_20200416\AHW06_Smart_pointer\AHW06_main.cpp(19): message : see reference to function template instantiation 'Array<int>::Array(int)' being compiled
 Z:\D\ITEA\PO\AL06_20200416\AHW06_Smart_pointer\AHW06_main.cpp(19): message : see reference to class template instantiation 'Array<int>' being compiled
   AHW06_Smart_pointer.vcxproj -> Z:\D\ITEA\PO\AL06_20200416\Debug\AHW06_Smart_pointer.exe

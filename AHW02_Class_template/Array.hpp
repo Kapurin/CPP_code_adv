@@ -1,3 +1,4 @@
+#pragma once
 #include<iostream>
 #include <ctime>
 
@@ -15,7 +16,7 @@ public:
     T& operator[](int n);
 
     // перегрузка оператора >>
-    friend std::istream& operator>> (std::istream &in, Array<T> &Element);
+    //friend std::istream& operator>> (std::istream &in, Array<T> &Element);
 
     // служебные функции
     int getSize();		        // возвращение размера массива
@@ -75,11 +76,11 @@ template <class T> T &Array<T>::operator[](int n)
 
 
 // перегрузка оператора >>
-template <class T> std::istream& operator>>(std::istream &in, Array<T> &Element)
-{
-    in >> Element[0];
-    return in;
-}
+//template <class T> std::istream& operator>>(std::istream &in, Array<T> &Element)
+//{
+//    in >> Element[0];
+//    return in;
+//}
 
 
 
