@@ -1,0 +1,5 @@
+﻿  AHW08_2_main.cpp
+  service_func.cpp
+  Generating Code...
+Z:\D\ITEA\PO\AL08_20200423\AHW08_2_Pointer_Fun_v2.0\service_func.cpp(88): warning C4715: 'getArithmeticFcn': not all control paths return a value
+  AHW08_2_Pointer_Fun_v2.0.vcxproj -> Z:\D\ITEA\PO\AL08_20200423\Debug\AHW08_2_Pointer_Fun_v2.0.exe
