@@ -1,0 +1,140 @@
+﻿  AHW06_2_main.cpp
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(41): warning C4661: 'Array<int>::Array(int)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(15): message : see declaration of 'Array<int>::Array'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(41): warning C4661: 'Array<int>::Array(void)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(14): message : see declaration of 'Array<int>::Array'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(41): warning C4661: 'Array<int>::~Array(void)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(16): message : see declaration of 'Array<int>::~Array'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(41): warning C4661: 'T &Array<T>::operator [](int)': no suitable definition provided for explicit template instantiation request
+          with
+          [
+              T=int
+          ]
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(19): message : see declaration of 'Array<int>::operator []'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(41): warning C4661: 'int Array<int>::getSize(void)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(25): message : see declaration of 'Array<int>::getSize'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(41): warning C4661: 'void Array<int>::Print(void)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(26): message : see declaration of 'Array<int>::Print'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(41): warning C4661: 'void Array<int>::Set(void)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(27): message : see declaration of 'Array<int>::Set'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(41): warning C4661: 'T &Array<T>::getMin(void)': no suitable definition provided for explicit template instantiation request
+          with
+          [
+              T=int
+          ]
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(29): message : see declaration of 'Array<int>::getMin'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(41): warning C4661: 'T &Array<T>::getMax(void)': no suitable definition provided for explicit template instantiation request
+          with
+          [
+              T=int
+          ]
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(30): message : see declaration of 'Array<int>::getMax'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(41): warning C4661: 'T &Array<T>::getBegin(void)': no suitable definition provided for explicit template instantiation request
+          with
+          [
+              T=int
+          ]
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(31): message : see declaration of 'Array<int>::getBegin'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(41): warning C4661: 'T &Array<T>::getEnd(void)': no suitable definition provided for explicit template instantiation request
+          with
+          [
+              T=int
+          ]
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(32): message : see declaration of 'Array<int>::getEnd'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(41): warning C4661: 'void Array<int>::Sort(void)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(33): message : see declaration of 'Array<int>::Sort'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(41): warning C4661: 'int Array<int>::Find(int,int,Array<int> &)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(35): message : see declaration of 'Array<int>::Find'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(42): warning C4661: 'Array<double>::Array(int)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(15): message : see declaration of 'Array<double>::Array'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(42): warning C4661: 'Array<double>::Array(void)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(14): message : see declaration of 'Array<double>::Array'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(42): warning C4661: 'Array<double>::~Array(void)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(16): message : see declaration of 'Array<double>::~Array'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(42): warning C4661: 'T &Array<T>::operator [](int)': no suitable definition provided for explicit template instantiation request
+          with
+          [
+              T=double
+          ]
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(19): message : see declaration of 'Array<double>::operator []'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(42): warning C4661: 'int Array<double>::getSize(void)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(25): message : see declaration of 'Array<double>::getSize'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(42): warning C4661: 'void Array<double>::Print(void)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(26): message : see declaration of 'Array<double>::Print'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(42): warning C4661: 'void Array<double>::Set(void)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(27): message : see declaration of 'Array<double>::Set'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(42): warning C4661: 'T &Array<T>::getMin(void)': no suitable definition provided for explicit template instantiation request
+          with
+          [
+              T=double
+          ]
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(29): message : see declaration of 'Array<double>::getMin'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(42): warning C4661: 'T &Array<T>::getMax(void)': no suitable definition provided for explicit template instantiation request
+          with
+          [
+              T=double
+          ]
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(30): message : see declaration of 'Array<double>::getMax'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(42): warning C4661: 'T &Array<T>::getBegin(void)': no suitable definition provided for explicit template instantiation request
+          with
+          [
+              T=double
+          ]
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(31): message : see declaration of 'Array<double>::getBegin'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(42): warning C4661: 'T &Array<T>::getEnd(void)': no suitable definition provided for explicit template instantiation request
+          with
+          [
+              T=double
+          ]
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(32): message : see declaration of 'Array<double>::getEnd'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(42): warning C4661: 'void Array<double>::Sort(void)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(33): message : see declaration of 'Array<double>::Sort'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(42): warning C4661: 'int Array<double>::Find(int,int,Array<double> &)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(35): message : see declaration of 'Array<double>::Find'
+Z:\D\ITEA\PO\AL06_20200416\AHW06_2_Smart_ptr_with_Array_lib\Smart_ptr.hpp(40): warning C4661: 'Array<int>::Array(int)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(15): message : see declaration of 'Array<int>::Array'
+Z:\D\ITEA\PO\AL06_20200416\AHW06_2_Smart_ptr_with_Array_lib\Smart_ptr.hpp(40): warning C4661: 'Array<int>::Array(void)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(14): message : see declaration of 'Array<int>::Array'
+Z:\D\ITEA\PO\AL06_20200416\AHW06_2_Smart_ptr_with_Array_lib\Smart_ptr.hpp(40): warning C4661: 'Array<int>::~Array(void)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(16): message : see declaration of 'Array<int>::~Array'
+Z:\D\ITEA\PO\AL06_20200416\AHW06_2_Smart_ptr_with_Array_lib\Smart_ptr.hpp(40): warning C4661: 'T &Array<T>::operator [](int)': no suitable definition provided for explicit template instantiation request
+          with
+          [
+              T=int
+          ]
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(19): message : see declaration of 'Array<int>::operator []'
+Z:\D\ITEA\PO\AL06_20200416\AHW06_2_Smart_ptr_with_Array_lib\Smart_ptr.hpp(40): warning C4661: 'int Array<int>::getSize(void)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(25): message : see declaration of 'Array<int>::getSize'
+Z:\D\ITEA\PO\AL06_20200416\AHW06_2_Smart_ptr_with_Array_lib\Smart_ptr.hpp(40): warning C4661: 'void Array<int>::Print(void)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(26): message : see declaration of 'Array<int>::Print'
+Z:\D\ITEA\PO\AL06_20200416\AHW06_2_Smart_ptr_with_Array_lib\Smart_ptr.hpp(40): warning C4661: 'void Array<int>::Set(void)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(27): message : see declaration of 'Array<int>::Set'
+Z:\D\ITEA\PO\AL06_20200416\AHW06_2_Smart_ptr_with_Array_lib\Smart_ptr.hpp(40): warning C4661: 'T &Array<T>::getMin(void)': no suitable definition provided for explicit template instantiation request
+          with
+          [
+              T=int
+          ]
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(29): message : see declaration of 'Array<int>::getMin'
+Z:\D\ITEA\PO\AL06_20200416\AHW06_2_Smart_ptr_with_Array_lib\Smart_ptr.hpp(40): warning C4661: 'T &Array<T>::getMax(void)': no suitable definition provided for explicit template instantiation request
+          with
+          [
+              T=int
+          ]
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(30): message : see declaration of 'Array<int>::getMax'
+Z:\D\ITEA\PO\AL06_20200416\AHW06_2_Smart_ptr_with_Array_lib\Smart_ptr.hpp(40): warning C4661: 'T &Array<T>::getBegin(void)': no suitable definition provided for explicit template instantiation request
+          with
+          [
+              T=int
+          ]
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(31): message : see declaration of 'Array<int>::getBegin'
+Z:\D\ITEA\PO\AL06_20200416\AHW06_2_Smart_ptr_with_Array_lib\Smart_ptr.hpp(40): warning C4661: 'T &Array<T>::getEnd(void)': no suitable definition provided for explicit template instantiation request
+          with
+          [
+              T=int
+          ]
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(32): message : see declaration of 'Array<int>::getEnd'
+Z:\D\ITEA\PO\AL06_20200416\AHW06_2_Smart_ptr_with_Array_lib\Smart_ptr.hpp(40): warning C4661: 'void Array<int>::Sort(void)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(33): message : see declaration of 'Array<int>::Sort'
+Z:\D\ITEA\PO\AL06_20200416\AHW06_2_Smart_ptr_with_Array_lib\Smart_ptr.hpp(40): warning C4661: 'int Array<int>::Find(int,int,Array<int> &)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_StaticLib\Array_lib.h(35): message : see declaration of 'Array<int>::Find'
+  AHW06_2_Smart_ptr_with_Array_lib.vcxproj -> Z:\D\ITEA\PO\AL06_20200416\Debug\AHW06_2_Smart_ptr_with_Array_lib.exe

@@ -1,0 +1,167 @@
+﻿  AHW06_5_main.cpp
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(41): warning C4661: 'Array<int>::Array(int)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(15): message : see declaration of 'Array<int>::Array'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(41): warning C4661: 'Array<int>::Array(void)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(14): message : see declaration of 'Array<int>::Array'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(41): warning C4661: 'Array<int>::~Array(void)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(16): message : see declaration of 'Array<int>::~Array'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(41): warning C4661: 'T &Array<T>::operator [](int)': no suitable definition provided for explicit template instantiation request
+          with
+          [
+              T=int
+          ]
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(19): message : see declaration of 'Array<int>::operator []'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(41): warning C4661: 'int Array<int>::getSize(void)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(25): message : see declaration of 'Array<int>::getSize'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(41): warning C4661: 'void Array<int>::Print(void)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(26): message : see declaration of 'Array<int>::Print'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(41): warning C4661: 'void Array<int>::Set(void)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(27): message : see declaration of 'Array<int>::Set'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(41): warning C4661: 'T &Array<T>::getMin(void)': no suitable definition provided for explicit template instantiation request
+          with
+          [
+              T=int
+          ]
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(29): message : see declaration of 'Array<int>::getMin'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(41): warning C4661: 'T &Array<T>::getMax(void)': no suitable definition provided for explicit template instantiation request
+          with
+          [
+              T=int
+          ]
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(30): message : see declaration of 'Array<int>::getMax'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(41): warning C4661: 'T &Array<T>::getBegin(void)': no suitable definition provided for explicit template instantiation request
+          with
+          [
+              T=int
+          ]
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(31): message : see declaration of 'Array<int>::getBegin'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(41): warning C4661: 'T &Array<T>::getEnd(void)': no suitable definition provided for explicit template instantiation request
+          with
+          [
+              T=int
+          ]
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(32): message : see declaration of 'Array<int>::getEnd'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(41): warning C4661: 'void Array<int>::Sort(void)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(33): message : see declaration of 'Array<int>::Sort'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(41): warning C4661: 'int Array<int>::Find(int,int,Array<int> &)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(35): message : see declaration of 'Array<int>::Find'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(42): warning C4661: 'Array<double>::Array(int)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(15): message : see declaration of 'Array<double>::Array'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(42): warning C4661: 'Array<double>::Array(void)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(14): message : see declaration of 'Array<double>::Array'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(42): warning C4661: 'Array<double>::~Array(void)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(16): message : see declaration of 'Array<double>::~Array'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(42): warning C4661: 'T &Array<T>::operator [](int)': no suitable definition provided for explicit template instantiation request
+          with
+          [
+              T=double
+          ]
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(19): message : see declaration of 'Array<double>::operator []'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(42): warning C4661: 'int Array<double>::getSize(void)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(25): message : see declaration of 'Array<double>::getSize'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(42): warning C4661: 'void Array<double>::Print(void)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(26): message : see declaration of 'Array<double>::Print'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(42): warning C4661: 'void Array<double>::Set(void)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(27): message : see declaration of 'Array<double>::Set'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(42): warning C4661: 'T &Array<T>::getMin(void)': no suitable definition provided for explicit template instantiation request
+          with
+          [
+              T=double
+          ]
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(29): message : see declaration of 'Array<double>::getMin'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(42): warning C4661: 'T &Array<T>::getMax(void)': no suitable definition provided for explicit template instantiation request
+          with
+          [
+              T=double
+          ]
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(30): message : see declaration of 'Array<double>::getMax'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(42): warning C4661: 'T &Array<T>::getBegin(void)': no suitable definition provided for explicit template instantiation request
+          with
+          [
+              T=double
+          ]
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(31): message : see declaration of 'Array<double>::getBegin'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(42): warning C4661: 'T &Array<T>::getEnd(void)': no suitable definition provided for explicit template instantiation request
+          with
+          [
+              T=double
+          ]
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(32): message : see declaration of 'Array<double>::getEnd'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(42): warning C4661: 'void Array<double>::Sort(void)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(33): message : see declaration of 'Array<double>::Sort'
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(42): warning C4661: 'int Array<double>::Find(int,int,Array<double> &)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Array\Debug_x86\Array_DynLib\Array_dll.h(35): message : see declaration of 'Array<double>::Find'
+Z:\D\ITEA\PO\00_Libs\Smart_ptr\Debug_x86\Smart_ptr_DynLib\Smart_ptr_dll.h(30): warning C4661: 'Smart_ptr<int>::Smart_ptr(Smart_ptr<int> &)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Smart_ptr\Debug_x86\Smart_ptr_DynLib\Smart_ptr_dll.h(16): message : see declaration of 'Smart_ptr<int>::Smart_ptr'
+Z:\D\ITEA\PO\00_Libs\Smart_ptr\Debug_x86\Smart_ptr_DynLib\Smart_ptr_dll.h(30): warning C4661: 'Smart_ptr<int>::Smart_ptr(T *)': no suitable definition provided for explicit template instantiation request
+          with
+          [
+              T=int
+          ]
+Z:\D\ITEA\PO\00_Libs\Smart_ptr\Debug_x86\Smart_ptr_DynLib\Smart_ptr_dll.h(13): message : see declaration of 'Smart_ptr<int>::Smart_ptr'
+Z:\D\ITEA\PO\00_Libs\Smart_ptr\Debug_x86\Smart_ptr_DynLib\Smart_ptr_dll.h(30): warning C4661: 'Smart_ptr<int>::~Smart_ptr(void)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Smart_ptr\Debug_x86\Smart_ptr_DynLib\Smart_ptr_dll.h(14): message : see declaration of 'Smart_ptr<int>::~Smart_ptr'
+Z:\D\ITEA\PO\00_Libs\Smart_ptr\Debug_x86\Smart_ptr_DynLib\Smart_ptr_dll.h(30): warning C4661: 'Smart_ptr<int> &Smart_ptr<int>::operator =(Smart_ptr<int> &)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Smart_ptr\Debug_x86\Smart_ptr_DynLib\Smart_ptr_dll.h(19): message : see declaration of 'Smart_ptr<int>::operator ='
+Z:\D\ITEA\PO\00_Libs\Smart_ptr\Debug_x86\Smart_ptr_DynLib\Smart_ptr_dll.h(30): warning C4661: 'T &Smart_ptr<T>::operator *(void)': no suitable definition provided for explicit template instantiation request
+          with
+          [
+              T=int
+          ]
+Z:\D\ITEA\PO\00_Libs\Smart_ptr\Debug_x86\Smart_ptr_DynLib\Smart_ptr_dll.h(22): message : see declaration of 'Smart_ptr<int>::operator *'
+Z:\D\ITEA\PO\00_Libs\Smart_ptr\Debug_x86\Smart_ptr_DynLib\Smart_ptr_dll.h(30): warning C4661: 'T *Smart_ptr<T>::operator ->(void)': no suitable definition provided for explicit template instantiation request
+          with
+          [
+              T=int
+          ]
+Z:\D\ITEA\PO\00_Libs\Smart_ptr\Debug_x86\Smart_ptr_DynLib\Smart_ptr_dll.h(25): message : see declaration of 'Smart_ptr<int>::operator ->'
+Z:\D\ITEA\PO\00_Libs\Smart_ptr\Debug_x86\Smart_ptr_DynLib\Smart_ptr_dll.h(31): warning C4661: 'Smart_ptr<double>::Smart_ptr(Smart_ptr<double> &)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Smart_ptr\Debug_x86\Smart_ptr_DynLib\Smart_ptr_dll.h(16): message : see declaration of 'Smart_ptr<double>::Smart_ptr'
+Z:\D\ITEA\PO\00_Libs\Smart_ptr\Debug_x86\Smart_ptr_DynLib\Smart_ptr_dll.h(31): warning C4661: 'Smart_ptr<double>::Smart_ptr(T *)': no suitable definition provided for explicit template instantiation request
+          with
+          [
+              T=double
+          ]
+Z:\D\ITEA\PO\00_Libs\Smart_ptr\Debug_x86\Smart_ptr_DynLib\Smart_ptr_dll.h(13): message : see declaration of 'Smart_ptr<double>::Smart_ptr'
+Z:\D\ITEA\PO\00_Libs\Smart_ptr\Debug_x86\Smart_ptr_DynLib\Smart_ptr_dll.h(31): warning C4661: 'Smart_ptr<double>::~Smart_ptr(void)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Smart_ptr\Debug_x86\Smart_ptr_DynLib\Smart_ptr_dll.h(14): message : see declaration of 'Smart_ptr<double>::~Smart_ptr'
+Z:\D\ITEA\PO\00_Libs\Smart_ptr\Debug_x86\Smart_ptr_DynLib\Smart_ptr_dll.h(31): warning C4661: 'Smart_ptr<double> &Smart_ptr<double>::operator =(Smart_ptr<double> &)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Smart_ptr\Debug_x86\Smart_ptr_DynLib\Smart_ptr_dll.h(19): message : see declaration of 'Smart_ptr<double>::operator ='
+Z:\D\ITEA\PO\00_Libs\Smart_ptr\Debug_x86\Smart_ptr_DynLib\Smart_ptr_dll.h(31): warning C4661: 'T &Smart_ptr<T>::operator *(void)': no suitable definition provided for explicit template instantiation request
+          with
+          [
+              T=double
+          ]
+Z:\D\ITEA\PO\00_Libs\Smart_ptr\Debug_x86\Smart_ptr_DynLib\Smart_ptr_dll.h(22): message : see declaration of 'Smart_ptr<double>::operator *'
+Z:\D\ITEA\PO\00_Libs\Smart_ptr\Debug_x86\Smart_ptr_DynLib\Smart_ptr_dll.h(31): warning C4661: 'T *Smart_ptr<T>::operator ->(void)': no suitable definition provided for explicit template instantiation request
+          with
+          [
+              T=double
+          ]
+Z:\D\ITEA\PO\00_Libs\Smart_ptr\Debug_x86\Smart_ptr_DynLib\Smart_ptr_dll.h(25): message : see declaration of 'Smart_ptr<double>::operator ->'
+Z:\D\ITEA\PO\00_Libs\Smart_ptr\Debug_x86\Smart_ptr_DynLib\Smart_ptr_dll.h(32): warning C4661: 'Smart_ptr<Array<int>>::Smart_ptr(Smart_ptr<Array<int>> &)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Smart_ptr\Debug_x86\Smart_ptr_DynLib\Smart_ptr_dll.h(16): message : see declaration of 'Smart_ptr<Array<int>>::Smart_ptr'
+Z:\D\ITEA\PO\00_Libs\Smart_ptr\Debug_x86\Smart_ptr_DynLib\Smart_ptr_dll.h(32): warning C4661: 'Smart_ptr<Array<int>>::Smart_ptr(T *)': no suitable definition provided for explicit template instantiation request
+          with
+          [
+              T=Array<int>
+          ]
+Z:\D\ITEA\PO\00_Libs\Smart_ptr\Debug_x86\Smart_ptr_DynLib\Smart_ptr_dll.h(13): message : see declaration of 'Smart_ptr<Array<int>>::Smart_ptr'
+Z:\D\ITEA\PO\00_Libs\Smart_ptr\Debug_x86\Smart_ptr_DynLib\Smart_ptr_dll.h(32): warning C4661: 'Smart_ptr<Array<int>>::~Smart_ptr(void)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Smart_ptr\Debug_x86\Smart_ptr_DynLib\Smart_ptr_dll.h(14): message : see declaration of 'Smart_ptr<Array<int>>::~Smart_ptr'
+Z:\D\ITEA\PO\00_Libs\Smart_ptr\Debug_x86\Smart_ptr_DynLib\Smart_ptr_dll.h(32): warning C4661: 'Smart_ptr<Array<int>> &Smart_ptr<Array<int>>::operator =(Smart_ptr<Array<int>> &)': no suitable definition provided for explicit template instantiation request
+Z:\D\ITEA\PO\00_Libs\Smart_ptr\Debug_x86\Smart_ptr_DynLib\Smart_ptr_dll.h(19): message : see declaration of 'Smart_ptr<Array<int>>::operator ='
+Z:\D\ITEA\PO\00_Libs\Smart_ptr\Debug_x86\Smart_ptr_DynLib\Smart_ptr_dll.h(32): warning C4661: 'T &Smart_ptr<T>::operator *(void)': no suitable definition provided for explicit template instantiation request
+          with
+          [
+              T=Array<int>
+          ]
+Z:\D\ITEA\PO\00_Libs\Smart_ptr\Debug_x86\Smart_ptr_DynLib\Smart_ptr_dll.h(22): message : see declaration of 'Smart_ptr<Array<int>>::operator *'
+Z:\D\ITEA\PO\00_Libs\Smart_ptr\Debug_x86\Smart_ptr_DynLib\Smart_ptr_dll.h(32): warning C4661: 'T *Smart_ptr<T>::operator ->(void)': no suitable definition provided for explicit template instantiation request
+          with
+          [
+              T=Array<int>
+          ]
+Z:\D\ITEA\PO\00_Libs\Smart_ptr\Debug_x86\Smart_ptr_DynLib\Smart_ptr_dll.h(25): message : see declaration of 'Smart_ptr<Array<int>>::operator ->'
+     Creating library Z:\D\ITEA\PO\AL06_20200416\Debug\AHW06_5_Smart_ptr_Array_DLL.lib and object Z:\D\ITEA\PO\AL06_20200416\Debug\AHW06_5_Smart_ptr_Array_DLL.exp
+  AHW06_5_Smart_ptr_Array_DLL.vcxproj -> Z:\D\ITEA\PO\AL06_20200416\Debug\AHW06_5_Smart_ptr_Array_DLL.exe
