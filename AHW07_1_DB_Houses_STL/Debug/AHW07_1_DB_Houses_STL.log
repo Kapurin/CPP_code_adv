@@ -1,0 +1,3 @@
+﻿  AHW07_1_main.cpp
+LINK : warning LNK4076: invalid incremental status file 'Z:\D\ITEA\PO\AL07_20200421\Debug\AHW07_1_DB_Houses_STL.ilk' (which will be deleted); linking nonincrementally
+  AHW07_1_DB_Houses_STL.vcxproj -> Z:\D\ITEA\PO\AL07_20200421\Debug\AHW07_1_DB_Houses_STL.exe
