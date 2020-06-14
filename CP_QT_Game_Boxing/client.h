@@ -13,7 +13,6 @@ public:
 
 private:
     QTcpSocket *m_socketConnection = nullptr;
-
     QString  m_host;
     uint16_t m_port;
 

@@ -8,6 +8,7 @@
 class Srvclient : public QObject
 {
     Q_OBJECT
+
 public:
     Srvclient(QTcpSocket *client, uint16_t m_numclient);
     ~Srvclient();

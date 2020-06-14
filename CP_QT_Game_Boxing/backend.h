@@ -3,7 +3,6 @@
 
 #include <QObject>
 #include <QDebug>
-#include <QTimer>
 #include <QThread>
 
 #include "server.h"
@@ -14,17 +13,6 @@ class Backend : public QObject
 {
     Q_OBJECT
 
-    Q_PROPERTY(QString userNameSrv READ getUserNameSrv WRITE setUserNameSrv NOTIFY updUserNameSrv)
-    Q_PROPERTY(QString userNameCl READ getUserNameCl WRITE setUserNameCl NOTIFY updUserNameCl)
-
-    // уровень НР игроков
-    Q_PROPERTY(QString userHPSrv READ getHPSrv WRITE setHPSrv NOTIFY updHPSrv)
-    Q_PROPERTY(QString userHPCl READ getHPCl WRITE setHPCl NOTIFY updHPCl)
-
-    Q_PROPERTY(QString ipAddress READ getIpGame WRITE setIpGame)
-    Q_PROPERTY(QString statusGame READ getStatusGame WRITE setStatusGame NOTIFY updStatusGame)
-    Q_PROPERTY(QString txTextToQML READ getTxTextToQML WRITE setTxTextToQML NOTIFY upTxTextToQML)
-
 public:
     Backend();
     Server *SrvPtr = nullptr;
@@ -32,101 +20,104 @@ public:
     QThread *senderThread = nullptr;
     Game *G1 = nullptr;
 
-
-    QString getUserNameSrv();
-    void setUserNameSrv(QString name);
-
-    QString getUserNameCl();
-    void setUserNameCl(QString name);
-
-    QString getIpGame();
-    void setIpGame(QString ip_add);
-
-    QString getTxTextToQML();
-    void setTxTextToQML(QString TxText);
-
-    QString getRxTextFromQML();
-    void setRxTextFromQML(QString RxText);
-
-    QString getHPSrv();
-    QString getHPCl();
-
-    QString getStatusGame();
-    void setStatusGame(QString status);
-
 private:
-    QString m_UserNameSrv = "Player Server";
-    QString m_UserNameCl = "Player Client";
     QString m_IpGame = "0";
-    QString m_TxTextToQML;
-    QString m_RxTextFromQML;
-
-    QString m_HPSrv = "100";
-    QString m_HPCl = "100";
-
-    QString m_StatusGame = "[пусто]";
-
+    QString Ch_num1 = "0";
+    QString Ch_num2 = "0";
 
 public slots:
-    void buttCreateGame();
-    void buttDestroyGame();
+    // функция-геттер IP адреса игрока-"сервер"
+    QString getIpGame();
 
-    void buttJoinGame();
-    void buttDisconGame();
+    // функция-сеттер IP адреса игрока-"сервер"
+    void setIpGame(QString ip_add);
 
-    void printTester();
-    void setHPSrv(QString);
-    void setHPCl(QString);
-
-    void sendText2();
-    void initData();
-
-    // кнопки
-    // для игрока-"сервер"
+    // == Кнопки (GUI QML) ==
+    // выбор ударов/блоков для игрока-"сервер"
     void buttSrvPunchHead();
     void buttSrvPunchBody();
     void buttSrvBlockHead();
     void buttSrvBlockBody();
 
-    // для игрока-"клиент"
+    // выбор ударов/блоков для игрока-"клиент"
     void buttClPunchHead();
     void buttClPunchBody();
     void buttClBlockHead();
     void buttClBlockBody();
 
+    // Кнопки основных действий с игрой
+    // функция создания игры
+    void buttCreateGame();
+
+    // функция завершения игры
+    void buttDestroyGame();
+
+    // функция подключения к игре
+    void buttJoinGame();
+
+    // функция отключения от игры
+    void buttDisconGame();
+
+    // функция запуска игры
+    void startGame();
+
+    // функция продолжения игры
+    void funcContinueGame(QString);
 
 private slots:
+    // функция приема данных для игрока-"сервер"
     void PrintText(QString);
+
+    // функция приема данных для игрока-"клиент"
     void PrintTextCl(QString);
 
 signals:
+    // передача данных для игрока-"сервер"
     void sendText(QString);
+
+    // передача данных для игрока-"клиент"
     void sendTextCl(QString);
 
-    void disconnect();
+    // сигнал отключения от игры
+    void disconnectGame();
 
-    void upTxTextToQML(QString);
+    // передача текущих уровней НР игроков
     void updHPSrv(QString);
     void updHPCl(QString);
+
+    // передача имен игроков
     void updUserNameSrv(QString);
     void updUserNameCl(QString);
-    void updStatusGame(QString);
 
-    void punchTestBack();
-
-    // сигналы от кнопок для передачи в класс "Game"
-    // для игрока-"сервер"
+    // === Сигналы для отправки в класс "Game" ===
+    // сигналы от кнопок
+    // выбор ударов/блоков для игрока-"сервер"
     void sigSrvPunchHead(QString);
     void sigSrvPunchBody(QString);
     void sigSrvBlockHead(QString);
     void sigSrvBlockBody(QString);
 
-    // для игрока-"клиент"
+    // выбор ударов/блоков для игрока-"клиент"
     void sigClPunchHead(QString);
     void sigClPunchBody(QString);
     void sigClBlockHead(QString);
     void sigClBlockBody(QString);
 
+    // сигнал продолжения игры
+    void sigContinueGame();
+
+    // === Сигналы для отправки в класс "Guiworker" ===
+    // прием данных для игрока-"сервер"
+    void sigPrintText(QString);
+
+    // прием данных для игрока-"клиент"
+    void sigPrintTextCl(QString);
+
+    // инициализация данных
+    void sigInitData();
+
+    // остановка воспроизведения фонового саундтрека
+    void sigStopMusic();
 };
 
 #endif // BACKEND_H

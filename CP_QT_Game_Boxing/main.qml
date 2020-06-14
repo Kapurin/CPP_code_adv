@@ -11,6 +11,8 @@ Window {
     title: qsTr("Game Boxing")
 
 
+
+
     StackLayout {
         id: generalStack
 
@@ -22,7 +24,7 @@ Window {
             bottom: parent.bottom
             right: parent.right
 
-            bottomMargin: 60
+            // bottomMargin: 60
         }
         // нумерация страниц с нуля!
         // окно №0 - окно приветствия
@@ -47,62 +49,62 @@ Window {
         }
     }
 
-    Rectangle {
-        id: buttons_rect
+    //    Rectangle {
+    //        id: buttons_rect
 
-        height: 40
+    //        height: 40
 
-        anchors {
-            left: parent.left
-            bottom: parent.bottom
-            right: parent.right
+    //        anchors {
+    //            left: parent.left
+    //            bottom: parent.bottom
+    //            right: parent.right
 
-            bottomMargin: 10
-        }
+    //            bottomMargin: 10
+    //        }
 
-        CustomButton {
-            id: generalButton_1
+    //        CustomButton {
+    //            id: generalButton_1
 
-            enabled: true //generalStack.currentIndex === 1
+    //            enabled: true
 
-            anchors {
-                left: parent.left
-                verticalCenter: parent.verticalCenter
+    //            anchors {
+    //                left: parent.left
+    //                verticalCenter: parent.verticalCenter
 
-                leftMargin: 100
-            }
+    //                leftMargin: 100
+    //            }
 
-            textButton: "Back"
+    //            textButton: "Back"
 
-            onClicked:{
-                if (generalStack.currentIndex > 0)
-                {
-                    generalStack.currentIndex--
-              }
-            }
-        }
+    //            onClicked:{
+    //                if (generalStack.currentIndex > 0)
+    //                {
+    //                    generalStack.currentIndex--
+    //                }
+    //            }
+    //        }
 
-        CustomButton {
-            id: generalButton_2
+    //        CustomButton {
+    //            id: generalButton_2
 
-            enabled: true//generalStack.currentIndex === 0
+    //            enabled: true
 
-            anchors {
-                right: parent.right
-                verticalCenter: parent.verticalCenter
+    //            anchors {
+    //                right: parent.right
+    //                verticalCenter: parent.verticalCenter
 
-                rightMargin: 100
-            }
+    //                rightMargin: 100
+    //            }
 
-            textButton: "Next"
+    //            textButton: "Next"
 
-            onClicked:{
-                if (generalStack.currentIndex < (generalStack.count - 1))
-                {
-                generalStack.currentIndex++
+    //            onClicked:{
+    //                if (generalStack.currentIndex < (generalStack.count - 1))
+    //                {
+    //                    generalStack.currentIndex++
 
-              }
-            }
-         }
-    }
+    //                }
+    //            }
+    //        }
+    //    }
 }

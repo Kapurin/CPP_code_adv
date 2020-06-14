@@ -1,9 +1,8 @@
 #include "server.h"
-//#include "mainwindow.h"
-
 #include <QDebug>
 #include <QDataStream>
 #include <QThread>
+
 
 Server::Server(QString host, uint16_t port) :
     m_host(host),
@@ -23,11 +22,13 @@ Server::Server(QString host, uint16_t port) :
     connect(m_serverSocket, &QTcpServer::newConnection, this, &Server::sigNewConnection);
 }
 
+
 Server::~Server()
 {
     qDebug() << "Destructor Server!";
     delete m_serverSocket;
 }
+
 
 void Server::slotNewConnection()
 {
@@ -64,6 +65,7 @@ void Server::slotErrorFromClient(QAbstractSocket::SocketError error)
 {
     qDebug() << error;
 }
+
 
 void Server::slotErrorServer(QAbstractSocket::SocketError error)
 {

@@ -12,6 +12,14 @@ Page {
         color: "#E6E6E6"
     }
 
+    // фоновое изображение
+    Image {
+        id: imageBack
+        source: "qrc:/images/boxing.jpg"
+        opacity: 0.4
+    }
+
+
     // == текст над полем вывода игрового процесса ==
     Text {
         id: textOutWin
@@ -23,13 +31,14 @@ Page {
         text: "Текущий игровой процесс:"
         color: "black"
         font.pixelSize: 15
+        font.bold: true
     }
 
     // == поле вывода игрового процесса ==
     Rectangle {
         id: rectOutWin
         width: 300
-        height: 380
+        height: 440//380
         border.color: "black"
         anchors {
             top: parent.top
@@ -64,10 +73,15 @@ Page {
             leftMargin: 10
         }
         Text {
-           // property int intToStr2: sideCPPBackend.userHPSrv
+            property int userHPSrvINT: sideCPPBackend.userHPSrv
             id: textOutHPPl1
             anchors.centerIn: parent
-            color: "green"
+            color:{
+                if (userHPSrvINT > 20)
+                    "green"
+                else
+                    "red"
+            }
             text: sideCPPBackend.userHPSrv
             font.pixelSize: 14
             font.bold: true
@@ -82,7 +96,7 @@ Page {
             leftMargin: 3
         }
         anchors.verticalCenter: rectOutHPPl1.verticalCenter
-        text: ":НР " + sideCPPBackend.userNameSrv //":НР игрока №1"
+        text: ":НР " + sideCPPBackend.userNameSrv
         color: "black"
         font.pixelSize: 14
     }
@@ -103,10 +117,15 @@ Page {
             leftMargin: 10
         }
         Text {
-            //property int intToStr: sideCPPBackend.userHPCl
+            property int userHPClINT: sideCPPBackend.userHPCl
             id: textOutHPPl2
             anchors.centerIn: parent
-            color: "green"
+            color:{
+                if (userHPClINT > 20)
+                    "green"
+                else
+                    "red"
+            }
             text: sideCPPBackend.userHPCl
             font.pixelSize: 14
             font.bold: true
@@ -121,13 +140,10 @@ Page {
             leftMargin: 3
         }
         anchors.verticalCenter: rectOutHPPl2.verticalCenter
-        text: ":НР " + sideCPPBackend.userNameCl//":НР игрока №2"
+        text: ":НР " + sideCPPBackend.userNameCl
         color: "black"
         font.pixelSize: 14
     }
-
-
-
 
 
     // == текст возле текущего статуса игры ==
@@ -178,213 +194,167 @@ Page {
     }
 
     // == кнопки выбора ударов ==
-        CustomButtonSmall {
-            id: buttonPunchHead
-    //        width: 150
-    //        height: 30
-            anchors {
-                top: textButtPunch.bottom
-                left: rectOutWin.right
-                topMargin: 5
-                leftMargin: 10
-            }
-            textButton: "Голова"
-            onClicked: {
-//                if (sideCPPBackend.ipAddress === "0")
-//                    sideCPPBackend.buttSrvPunchHead()
-//                else
-//                    sideCPPBackend.buttClPunchHead()
-
-                sideCPPBackend.sendText2()
-            }
+    CustomButtonSmall {
+        id: buttonPunchHead
+        anchors {
+            top: textButtPunch.bottom
+            left: rectOutWin.right
+            topMargin: 5
+            leftMargin: 10
         }
-
-        CustomButtonSmall {
-            id: buttonPunchBody
-    //        width: 150
-    //        height: 30
-            anchors {
-                left: buttonPunchHead.right
-                leftMargin: 10
-            }
-            anchors.verticalCenter: buttonPunchHead.verticalCenter
-            textButton: "Корпус"
-            onClicked:{
-                if (sideCPPBackend.ipAddress === "0")
-                    sideCPPBackend.buttSrvPunchBody()
-                else
-                    sideCPPBackend.buttClPunchBody()
-            }
+        textButton: "Голова"
+        onClicked: {
+            if (sideCPPBackend.ipAddress === "0")
+                sideCPPBackend.buttGWSrvPunchHead()
+            else
+                sideCPPBackend.buttGWClPunchHead()
+            buttonPunchHead.enabled = false
+            buttonPunchBody.enabled = false
         }
+    }
 
-
-        // == текст возле кнопок выбора блоков защиты от ударов ==
-        Text {
-            id: textButtBlock
-            anchors {
-                top: buttonPunchHead.bottom
-                left: rectOutWin.right
-                topMargin: 40
-                leftMargin: 10
-            }
-            text: "Кнопки выбора блоков защиты:"
-            color: "black"
-            font.pixelSize: 14
-            font.bold: true
+    CustomButtonSmall {
+        id: buttonPunchBody
+        anchors {
+            left: buttonPunchHead.right
+            leftMargin: 10
         }
+        anchors.verticalCenter: buttonPunchHead.verticalCenter
+        textButton: "Корпус"
+        onClicked:{
+            if (sideCPPBackend.ipAddress === "0")
+                sideCPPBackend.buttGWSrvPunchBody()
+            else
+                sideCPPBackend.buttGWClPunchBody()
+            buttonPunchHead.enabled = false
+            buttonPunchBody.enabled = false
+        }
+    }
+
+
+    // == текст возле кнопок выбора блоков защиты от ударов ==
+    Text {
+        id: textButtBlock
+        anchors {
+            top: buttonPunchHead.bottom
+            left: rectOutWin.right
+            topMargin: 40
+            leftMargin: 10
+        }
+        text: "Кнопки выбора блоков защиты:"
+        color: "black"
+        font.pixelSize: 14
+        font.bold: true
+    }
 
 
     // == кнопки выбора блоков защиты от ударов ==
-        CustomButtonSmall {
-            id: buttonBlockHead
-    //        width: 150
-    //        height: 30
-            anchors {
-                top: textButtBlock.bottom
-                left: rectOutWin.right
-                topMargin: 5
-                leftMargin: 10
-            }
-            textButton: "Голова"
-            onClicked:{
-                if (sideCPPBackend.ipAddress === "0")
-                    sideCPPBackend.buttSrvBlockHead()
-                else
-                    sideCPPBackend.buttClBlockHead()
-            }
-        }
-
-        CustomButtonSmall {
-            id: buttonBlockBody
-    //        width: 150
-    //        height: 30
-            anchors {
-                left: buttonBlockHead.right
-                leftMargin: 10
-            }
-            anchors.verticalCenter: buttonBlockHead.verticalCenter
-            textButton: "Корпус"
-            onClicked: {
-//                if (sideCPPBackend.ipAddress === "0")
-//                    sideCPPBackend.buttSrvBlockBody()
-//                else
-//                    sideCPPBackend.buttClBlockBody()
-                sideCPPBackend.buttCreateGame()
-            }
-        }
-
-
-//    CustomButtonSmall {
-//        id: buttonSmall
-////        width: 150
-////        height: 30
-//        anchors {
-//            bottom: parent.bottom
-//            bottomMargin: 10
-//        }
-//        anchors.horizontalCenter: parent.horizontalCenter
-//        textButton: "TEST"
-//        onClicked: {}
-//    }
-//    CustomButton {
-//        id: startButton
-//        enabled: true
-//        width: 180
-//        height: 50
-//        anchors {
-//            bottom: stopButton.top
-//            right: parent.right
-
-//            bottomMargin: 20
-//            rightMargin: 20
-//        }
-
-//        textButton: "START SERVER"
-//        onClicked: {
-//            sideCPPBackend.buttCreateGame()
-//            startButton.enabled = false
-//            stopButton.enabled = true
-//        }
-//    }
-
-//    CustomButton {
-//        id: stopButton
-//        enabled: false
-//        width: 180
-//        height: 50
-//        anchors {
-//            bottom: parent.bottom
-//            right: parent.right
-
-//            bottomMargin: 200
-//            rightMargin: 20
-//        }
-
-//        textButton: "STOP SERVER"
-//        onClicked:{
-//            sideCPPBackend.buttDestroyGame()
-//            stopButton.enabled = false
-//            startButton.enabled = true
-//        }
-//    }
-
-
-    CustomButton {
-        id: startClButton
-        enabled: true
-        width: 100
-        height: 50
+    CustomButtonSmall {
+        id: buttonBlockHead
         anchors {
-            bottom: stopClButton.top
-            right: parent.right
-            bottomMargin: 20
-            rightMargin: 20
+            top: textButtBlock.bottom
+            left: rectOutWin.right
+            topMargin: 5
+            leftMargin: 10
         }
-
-        textButton: "START CLIENT"
-        onClicked: {
-            sideCPPBackend.buttJoinGame()
-            startClButton.enabled = false
-            stopClButton.enabled = true
-        }
-    }
-
-    CustomButton {
-        id: stopClButton
-        enabled: false
-        width: 100
-        height: 50
-        anchors {
-            bottom: parent.bottom
-            right: parent.right
-            bottomMargin: 20
-            rightMargin: 20
-        }
-
-        textButton: "STOP CLIENT"
+        textButton: "Голова"
         onClicked:{
-            sideCPPBackend.buttDisconGame()
-            stopClButton.enabled = false
-            startClButton.enabled = true
+            if (sideCPPBackend.ipAddress === "0")
+                sideCPPBackend.buttGWSrvBlockHead()
+            else
+                sideCPPBackend.buttGWClBlockHead()
+            buttonBlockHead.enabled = false
+            buttonBlockBody.enabled = false
         }
     }
 
-    CustomButton {
-        id: testButton1
-        enabled: true
-        width: 100
+    CustomButtonSmall {
+        id: buttonBlockBody
+        anchors {
+            left: buttonBlockHead.right
+            leftMargin: 10
+        }
+        anchors.verticalCenter: buttonBlockHead.verticalCenter
+        textButton: "Корпус"
+        onClicked: {
+            if (sideCPPBackend.ipAddress === "0")
+                sideCPPBackend.buttGWSrvBlockBody()
+            else
+                sideCPPBackend.buttGWClBlockBody()
+            buttonBlockHead.enabled = false
+            buttonBlockBody.enabled = false
+        }
+    }
+
+
+
+    // == кнопки управления игрой ==
+    CustomButtonSmall {
+        id: buttonRestartGame
+        width: 150
         height: 30
         anchors {
-            bottom: parent.bottom
-            right: parent.right
-            bottomMargin: 5
-            rightMargin: 150
+            top: buttonBlockHead.bottom
+            left: rectOutWin.right
+            topMargin: 100
+            leftMargin: 10
         }
-
-        textButton: "SEND"
+        textButton: "Перезапустить игру"
         onClicked:{
-            sideCPPBackend.printTester()
+            textAreaOutWin.clear()
+            sideCPPBackend.initData()
+        }
+    }
+
+    CustomButtonSmall {
+        id: buttonExitGame
+        width: 150
+        height: 30
+        anchors {
+            top: buttonRestartGame.bottom
+            left: rectOutWin.right
+            topMargin: 10
+            leftMargin: 10
+        }
+        textButton: "Завершить игру"
+        onClicked: {
+            if (sideCPPBackend.ipAddress === "0")
+                sideCPPBackend.buttGWDestroyGame()
+            else
+                sideCPPBackend.buttGWDisconGame()
+            Qt.quit()
+        }
+    }
+
+
+    // активация/деактивация кнопок ударов и блоков
+    // в зависимости от текущего статуса в игре (атака или защита)
+    Connections {
+        target: sideCPPBackend
+        onUpdStatusGame: {
+            if (sideCPPBackend.statusGame === "Вы атакуете!")
+            {
+                buttonPunchHead.enabled = true
+                buttonPunchBody.enabled = true
+                buttonBlockHead.enabled = false
+                buttonBlockBody.enabled = false
+            }
+            else if (sideCPPBackend.statusGame === "Вы защищаетесь!")
+            {
+                buttonPunchHead.enabled = false
+                buttonPunchBody.enabled = false
+                buttonBlockHead.enabled = true
+                buttonBlockBody.enabled = true
+            }
+            else if (sideCPPBackend.statusGame === "[пусто]" || sideCPPBackend.statusGame === "Вы победили :)"
+                     || sideCPPBackend.statusGame === "Вы проиграли :(")
+            {
+                buttonPunchHead.enabled = false
+                buttonPunchBody.enabled = false
+                buttonBlockHead.enabled = false
+                buttonBlockBody.enabled = false
+            }
+
         }
     }
 }
-

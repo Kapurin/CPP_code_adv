@@ -12,6 +12,13 @@ Page {
         color: "#E6E6E6"
     }
 
+    // фоновое изображение
+    Image {
+        id: imageBack
+        source: "qrc:/images/boxing.jpg"
+        opacity: 0.4
+    }
+
     // == статус подключения клиента ==
     Text {
         id: textStatusClient
@@ -19,8 +26,9 @@ Page {
         text: "Ожидание подключения клиента-игрока..."
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
-        color: "green"
+        color: "black"
         font.pixelSize: 20
+        font.bold: true
     }
 
     Connections {

@@ -1,12 +1,11 @@
 #include "client.h"
 #include <QDebug>
 #include <QCoreApplication>
-
 #include <QByteArray>
 #include <QDataStream>
 #include <QHostAddress>
 
-#include <iostream>
+
 
 Client::Client(QString host, uint16_t port) :
     m_host(host),
@@ -28,11 +27,13 @@ Client::Client(QString host, uint16_t port) :
     connect(m_socketConnection, &QTcpSocket::readyRead, this, &Client::slotReadClientCl);
 }
 
+
 Client::~Client()
 {
     qDebug() << "Destructor Client!";
     delete m_socketConnection;
 }
+
 
 void Client::sendMsg(QString msg)
 {
@@ -56,6 +57,7 @@ void Client::sendMsg(QString msg)
         m_socketConnection->write(block);
 }
 
+
 void Client::slotReadClientCl()
 {
     do {
@@ -65,16 +67,16 @@ void Client::slotReadClientCl()
         QByteArray buf;
         for (;;)
         {
-            /* По протоколу стыковки первые 10 байт - это размер сообщения
+        /* По протоколу стыковки первые 10 байт - это размер сообщения
         * если доступных байт меньше 10ти, выходим.. подождём пока придут
-        * */
+        */
             if (!msgSize)
             {
                 if (m_socketConnection->bytesAvailable() < 10) return;
                 msgSize = m_socketConnection->read(10).toInt();
             }
 
-            /* Если мы прочитали размер посылки, крутимся в вайле пока не вычитаем все сообщение
+         /* Если мы прочитали размер посылки, крутимся в вайле пока не вычитаем все сообщение
          *
          * ВОПРОС!!!!!
          * что я не предусмотрел в реализации ниже????
@@ -94,9 +96,7 @@ void Client::slotReadClientCl()
             if (msgSize == 0)
             {
                 qDebug() << "MsgFromSrv #" << msg;
-                //PrintText("MsgFromSrv #" + msg);
                 PrintText(msg);
-                //break;
                 buf.clear();
                 msg.clear();
             }
@@ -104,11 +104,13 @@ void Client::slotReadClientCl()
     } while (m_socketConnection->bytesAvailable());
 }
 
+
 void Client::slotConnected()
 {
     qDebug() << "Connected!";
     emit connected("Connected!");
 }
+
 
 void Client::slotError(QAbstractSocket::SocketError error)
 {

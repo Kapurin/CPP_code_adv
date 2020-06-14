@@ -15,8 +15,6 @@ public:
 
 private:
     QTcpServer *m_serverSocket = nullptr;
-
-
     QString  m_host;
     uint16_t m_port;
     uint16_t m_numclient = 0;
@@ -30,8 +28,6 @@ private slots:
     void slotNewConnection();
     void slotErrorFromClient(QAbstractSocket::SocketError);
     void slotErrorServer(QAbstractSocket::SocketError);
-
-
 };
 
 #endif // SERVER_H

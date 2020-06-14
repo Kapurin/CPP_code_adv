@@ -1,3 +1,4 @@
+QT += multimedia
 QT += quick
 QT += websockets network
 CONFIG += c++11
@@ -18,11 +19,15 @@ SOURCES += \
         boxer.cpp \
         client.cpp \
         game.cpp \
+        guiworker.cpp \
         main.cpp \
         server.cpp \
         srvclient.cpp
 
-RESOURCES += qml.qrc
+RESOURCES += qml.qrc \
+    images.qrc \
+    images.qrc \
+    sounds.qrc
 
 # Additional import path used to resolve QML modules in Qt Creator's code model
 QML_IMPORT_PATH =
@@ -42,5 +47,6 @@ HEADERS += \
     boxer.h \
     client.h \
     game.h \
+    guiworker.h \
     server.h \
     srvclient.h

@@ -12,6 +12,13 @@ Page {
         color: "#E6E6E6"
     }
 
+    // фоновое изображение
+    Image {
+        id: imageBack
+        source: "qrc:/images/boxing.jpg"
+        opacity: 0.4
+    }
+
     // == поле ввода IP адреса сервера ==
     Rectangle {
         id: rectInpIPadd
@@ -50,7 +57,7 @@ Page {
             if (textInpIPadd.text != "Enter IP server...")
             {
                 sideCPPBackend.ipAddress = textInpIPadd.text
-                sideCPPBackend.buttJoinGame()
+                sideCPPBackend.buttGWJoinGame()
                 generalStack.currentIndex = 4
             }
             else

@@ -1,8 +1,7 @@
 #include "srvclient.h"
-
-
 #include <QDebug>
 #include <QDataStream>
+
 
 Srvclient::Srvclient(QTcpSocket *client, uint16_t numclient) :
     m_client(client),
@@ -20,7 +19,6 @@ Srvclient::~Srvclient()
 }
 
 
-
 void Srvclient::slotReadClient()
 {
     do {
@@ -30,23 +28,23 @@ void Srvclient::slotReadClient()
         QByteArray buf;
         for (;;)
         {
-            /* По протоколу стыковки первые 10 байт - это размер сообщения
-        * если доступных байт меньше 10ти, выходим.. подождём пока придут
-        * */
+        /* По протоколу стыковки первые 10 байт - это размер сообщения
+         * если доступных байт меньше 10ти, выходим.. подождём пока придут
+         */
             if (!msgSize)
             {
                 if (m_client->bytesAvailable() < 10) return;
                 msgSize = m_client->read(10).toInt();
             }
 
-            /* Если мы прочитали размер посылки, крутимся в вайле пока не вычитаем все сообщение
+         /* Если мы прочитали размер посылки, крутимся в вайле пока не вычитаем все сообщение
          *
          * ВОПРОС!!!!!
          * что я не предусмотрел в реализации ниже????
          *
          * ОТВЕТ: не предусмотрена ситуация, когда высланные данные клиентом
          * могут прийти не сразу, а с некоторой задержкой (для этого используем "вечный" цикл for).
-         * */
+         */
             while (msgSize > 0) {
                 if (msgSize < 512)
                     buf = m_client->read(msgSize);
@@ -59,9 +57,7 @@ void Srvclient::slotReadClient()
             if (msgSize == 0)
             {
                 qDebug() << "MsgFromSrv #" << msg;
-                //PrintText("MsgFromSrv #" + msg);
                 PrintText(msg);
-                //break;
                 buf.clear();
                 msg.clear();
             }
@@ -69,15 +65,17 @@ void Srvclient::slotReadClient()
     } while (m_client->bytesAvailable());
 }
 
+
 void Srvclient::slotClientDisconnected()
 {
     qDebug() << "Client #" << m_numclient << "disconnected!";
     PrintText("Client #" + QString::number(m_numclient) + " disconnected!");
 }
 
+
 void Srvclient::sendMsgSrv(QString msg)
 {
-    // Hello World!         // 12 символов -> 0000000012
+    // Hello World!                 // 12 символов -> 0000000012
     // Шаг 1 - считаем кол-во символов (получаем int)
     // int переводим в QString
     // считаем кол-во символов получившейся стройки

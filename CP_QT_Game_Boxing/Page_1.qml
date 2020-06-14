@@ -12,6 +12,12 @@ Page {
         color: "#E6E6E6"
     }
 
+    // фоновое изображение
+    Image {
+        id: imageBack
+        source: "qrc:/images/boxing.jpg"
+        opacity: 0.4
+    }
 
 
     // == строчка приветствия ==
@@ -22,10 +28,10 @@ Page {
             topMargin: 20
         }
         anchors.horizontalCenter: parent.horizontalCenter
-        text: "WELCOME to 'Boxing Game' !!!"
-        color: "blue"
+        text: "WELCOME to <<Boxing Game>> !!!"
+        color: "#ADFF2F"
+        font.pixelSize: 23
         font.bold: true
-        font.pixelSize: 20
     }
 
 
@@ -72,5 +78,20 @@ Page {
             else
                 textInpUserName.text = "Вы не ввели свое имя!"
         }
+    }
+
+
+    // == строчка приветствия ==
+    Text {
+        id: textCitation
+        anchors {
+            bottom: parent.bottom
+            bottomMargin: 10
+        }
+        anchors.horizontalCenter: parent.horizontalCenter
+        text: "Порхай как бабочка, жаль как пчела...(с) Мохаммед Али"
+        color: "black"
+        font.pixelSize: 20
+        font.bold: true
     }
 }

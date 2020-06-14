@@ -12,7 +12,12 @@ Page {
         color: "#E6E6E6"
     }
 
-
+    // фоновое изображение
+    Image {
+        id: imageBack
+        source: "qrc:/images/boxing.jpg"
+        opacity: 0.4
+    }
 
     Rectangle {
         id: rectButtGame
@@ -28,7 +33,7 @@ Page {
             anchors.verticalCenter: parent.verticalCenter
             textButton: "Create game"
             onClicked: {
-                sideCPPBackend.buttCreateGame()
+                sideCPPBackend.buttGWCreateGame()
                 generalStack.currentIndex = 2
             }
         }

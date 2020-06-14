@@ -2,6 +2,7 @@
 #define GAME_H
 
 #include <QObject>
+#include<QEventLoop>
 #include "boxer.h"
 
 
@@ -10,11 +11,9 @@ class Game : public QObject
     Q_OBJECT
 public:
     Game();
-    void processGame();
-    void processGameNEW();
 
-    // функция вывода текущего здоровья игрока
-    void PrintPlayHealth(Boxer *P, QString Name);
+    // функция основной логики игры
+    void processGame();
 
     // функция вывода информации в начале атаки
     void PrintFightStartInfo(QString Num1, QString Num2);
@@ -25,8 +24,16 @@ public:
     // функция нанесения удара
     void FightPunch(Boxer *P1, Boxer *P2);
 
+    // функция ожидания пользовательского ввода
+    void delayfunc();
 
-    // функции-геттеры
+    // функция установки ударов/блоков для игрока-"сервер"
+    void SrvSetPunchBlock();
+
+    // функция установки ударов/блоков для игрока-"клиент"
+    void ClSetPunchBlock();
+
+    // == Функции-геттеры ==
     // для игрока-"сервер"
     QString getSrvPunchHead();
     QString getSrvPunchBody();
@@ -41,13 +48,8 @@ public:
     QString getClBlockBody();
     QString getUserNameClGame();
 
-    void delayfunc();
 
-    void SrvSetPunchBlock();
-    void ClSetPunchBlock();
 private:
-//    uint16_t m_HPSrvGame;
-//    uint16_t m_HPClGame;
     QString m_UserNameSrvGame;
     QString m_UserNameClGame;
 
@@ -70,15 +72,13 @@ private:
     QString m_ClBlockBody = "0";     // блок удара в корпус
 
 
-     QString m_SrvPunch =  "0";
-     QString m_SrvBlock =  "0";
-     QString m_ClPunch =  "0";
-     QString m_ClBlock =  "0";
+    QString m_SrvPunch =  "0";
+    QString m_SrvBlock =  "0";
+    QString m_ClPunch =  "0";
+    QString m_ClBlock =  "0";
 
 public slots:
-    void RxText(QString);
-
-    // функции-сеттеры
+    // == Функции-сеттеры ==
     // для игрока-"сервер"
     void setSrvPunchHead(QString);
     void setSrvPunchBody(QString);
@@ -94,10 +94,15 @@ public slots:
     void setUserNameClGame(QString);
 
 signals:
+    // передача информационных сообщений из игры
     void TxText(QString);
+
+    // передача текущих уровней НР игроков
     void TxHPSrvGame(QString);
     void TxHPClGame(QString);
-    void punchTest();
+
+    // сигнал продолжения игры
+    void sigContinueGame();
 };
 
 
